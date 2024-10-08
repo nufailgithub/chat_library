@@ -1,0 +1,31 @@
+{
+  "name": "chat",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/chat.umd.cjs",
+  "module": "./dist/chat.js",
+  "exports": {
+    ".": {
+      "import": "./dist/chat.js",
+      "require": "./dist/chat.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "vue": "^3.2.29"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.29"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.8"
+  }
+}
